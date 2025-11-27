@@ -4,57 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="asset/css/output.css">
+    <link rel="stylesheet" href="asset/css/common.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
    
     
     <title>Document</title>
 </head>
-<body>
     <main>
-        <header>
-            <nav class=" flex justify-between items-center  mx-auto space-x-8 bg-[#1F355E] text-white px-5 h-[70px]" >
+        <header class=" bg-[#1F355E]">
+
+            <nav class="flex max-w-7xl justify-between items-center  mx-auto space-x-8 bg-[#1F355E] text-white px-5 h-[70px]" >
 
                 <!-- Logo -->
 
-                <div class="flex">
+                <a href="top" aria-label="Page d'accueil du site trouve ton yado" class="text-2xl font-extrabold">TROUVE TON <span class="text-[#FFC107]">YADO</span></a> 
 
-                    <h2 class="text-1xl font-extrabold">TROUVE TON <span class="text-[#FFC107]">YADO</span></h2>
+                <!-- img mobile -->
 
-                </div>
-                
-                
-                <!-- Langage -->
+                <button aria-label="toggle button" aria-expanded="false" id="menu-btn" class="cursor-pointer w-7 md:hidden ">
+                    <img src="asset/image/icone-menu.svg" alt="">
+                </button>
 
-                 <div class="flex">
+                <!-- menu mobile -->
 
-                    <img src="/asset/image/icone-langue-fr.png" alt="r">
-                    <p>FR</p>
-
-                 </div>
-                
-                
-                <!-- Menu1 -->
-
-                <div class="space-x-2.5 font-semibold  ">
+                <ul id="toggle-menu"
+                class="w-full absolute top-full left-0 -translate-y-full -z-10 text-gray-800 border-b border-gray-200 flex flex-col
+                items center md:statitc md:z-10 md:w-min md:transform-none md:border-none md:flex-row"
+                >
+                    <li class="py-4 md:py-0 md:mr-6 hover:text-[#FFC107]"><a href="#" class="text-white font-semibold w-full">Home</a></li>
+                    <li class="py-4 md:py-0 md:mr-6 hover:text-[#FFC107]"><a href="#" class="text-white font-semibold">Home</a></li>
+                    <li class="py-4 md:py-0 md:mr-6 hover:text-[#FFC107]"><a href="#" class="text-white font-semibold">Home</a></li>
                     
-                    <a href="" class="hover:text-[#FFC107] text-[12px] ">Home</a>
-                    <a href="" class="hover:text-[#FFC107]">Recherche</a>
-                    <a href="" class="hover:text-[#FFC107]">Contact</a>
-
-                </div>
+                </ul>
                 
             
-                <!-- Bouton se connecter -->
-                
-                <div>
-                    <button class="font-semibold py-1 px-5 border rounded-2xl">Se connecter</button>
-                </div>
-                         
+               
             </nav>
+
             
-
-
+            
         </header>
+        <body>
+
+          <!-- barre de recherche -->
+            <div>
+                <div class="  p-2.5 border-[1px]">
+                    <h1 class="text-[16px] font-semibold text-[#1F355E]">Destination</h1>
+                    <div class="flex">
+                        <img sr c="asset/image/icone-langue-fr.png" alt="" class="size-5">
+                        <input type="text" class="border-[1px]">
+                    </div>
+                </div>
+
+                <h2>Date</h2>
+                <input type="text">
+
+                <h2>Voyageurs</h2>
+                <input type="text">
+            </div>
     </main>
 
 </body>
 </html>
+

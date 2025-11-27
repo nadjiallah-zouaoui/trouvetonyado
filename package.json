@@ -8,7 +8,7 @@
 
 , 
 "scripts": {
-    "dev": "tailwindcss -i ./asset/css/style.css -o ./asset/css/output.css",
+    "dev": "tailwindcss -i ./asset/css/style.css -o ./asset/css/output.css --watch",
     "poscss": "postcss ./asset/css/style.css -o ./asset/css/final.css"
   }
 }
