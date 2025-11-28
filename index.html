@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <title>Document</title>
 </head>
@@ -52,23 +52,114 @@
         <body>
 
           <!-- barre de recherche -->
-            <div>
-                <div class="  p-2.5 border-[1px]">
-                    <h1 class="text-[16px] font-semibold text-[#1F355E]">Destination</h1>
-                    <div class="flex">
-                        <img sr c="asset/image/icone-langue-fr.png" alt="" class="size-5">
-                        <input type="text" class="border-[1px]">
+            <div class=" my-11 container mx-auto justify-center ">
+                <div class="flex flex-col lg:flex-row shadow-md p-3 mx-5 rounded-2xl">
+
+                <!-- Destination -->
+
+                    <div class=" flex w-full lg:w-3/10 mb-3 lg:mb-0 shadow-lg mr-2.5 p-3 rounded-2xl space-x-2">
+            
+                      
+                        <div class="">
+                            <h2 class="text-[#1F355E] sm:text-[12px] lg:text-[20px]" >Destination</h2>  <!--Titre -->
+                            <i class="text-[#1F355E]  fa-solid fa-location-arrow"></i>                  <!--Logo -->
+                            <input type="text" placeholder="Ou allez-vous ?" >                            <!--Recherche -->
+                        </div>
                     </div>
+
+
+
+                <!-- Dates -->
+
+                    <div class=" flex w-full mb-3 lg:mb-0 lg:w-3/10 shadow-lg mr-2.5 p-3 rounded-2xl space-x-2">
+
+                        
+                        <div class="">
+                            <h2 class="text-[#1F355E] sm:text-[12px] lg:text-[20px]" >Dates</h2>      
+                            <i class="text-[#1F355E] fa-solid fa-calendar"></i>
+                            <input type="text" placeholder="Quand ?" class="">
+                        </div>
+                    </div>
+
+
+
+
+
+                <!-- Voyageurs -->
+
+                    <div class=" flex w-full mb-3 lg:mb-0 lg:w-3/10 shadow-lg mr-2.5 p-3 rounded-2xl space-x-2">
+                        
+                        <div class="">
+                            <h2 class="text-[#1F355E] sm:text-[12px] lg:text-[20px]" >Voyageurs</h2>
+                            <i class="text-[#1F355E] fa-solid fa-user-group"></i>
+                            <input type="text" placeholder="Combien de voyageurs ?">
+                        </div>    
+                    </div>
+
+
+                <!-- Button recherche -->
+
+                    <div  class="flex items-center">
+
+                        <div class=" flex w-full lg:w-1/10 mr-2.5  rounded-2xl ">
+
+                            <button class=" text-white p-4 bg-[#FFC107]  rounded-2xl">RECHERCHER</button>
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <!-- Slider 1 -->
+
+            <div class="container mx-auto mb-8"><h2>Logement boostés</h2></div>
+            <div class="flex w-full container mx-auto justify-center mb-8 ">
+                <div class="w-1/4 space-x-8">
+                    <img src="https://placehold.co/600x400" alt="" width="272px">
+                    <h2>Titre de l'annonce</h2>
+                    <p>130€ pour 4 nuits</p>
+                    <p>note 4/5</p>
+
+                </div>
+                <div class="w-1/4">
+                    <img src="https://placehold.co/600x400" alt="" width="272px">
+                    <h2>Titre de l'annonce</h2>
+                    <p>130€ pour 4 nuits</p>
+                    <p>note 4/5</p>
+
+                </div>
+                <div class="w-1/4">
+                    <img src="https://placehold.co/600x400" alt="" width="272px">
+                    <h2>Titre de l'annonce</h2>
+                    <p>130€ pour 4 nuits</p>
+                    <p>note 4/5</p>
+
+                </div>
+                <div class="w-1/4">
+                    <img src="https://placehold.co/600x400" alt="" width="272px">
+                    <h2>Titre de l'annonce</h2>
+                    <p>130€ pour 4 nuits</p>
+                    <p>note 4/5</p>
+
+                </div>
+            </div>
+
+            <!-- Qui sommes nous ? -->
+             <div class="w-full flex container mx-auto ">
+                <div class="w-1/2">
+                    <img src="https://placehold.co/600x400" alt="">
+                </div>
+                <div class="1/2">
+                    <h2>Qui sommes nous ?</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, voluptis ex eos?</p>
                 </div>
 
-                <h2>Date</h2>
-                <input type="text">
-
-                <h2>Voyageurs</h2>
-                <input type="text">
-            </div>
+             </div>
     </main>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js" integrity="sha512-6BTOlkauINO65nLhXhthZMtepgJSghyimIalb+crKRPhvhmsCdnIuGcVbR5/aQY2A+260iC1OPy1oCdB6pSSwQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>
 
