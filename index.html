@@ -15,7 +15,7 @@
     
     <title>Document</title>
 </head>
-    <main>
+    <main >
         <header class=" bg-[#1F355E]">
 
             <nav class="flex max-w-7xl justify-between items-center  mx-auto space-x-8 bg-[#1F355E] text-white px-5 h-[70px]" >
@@ -52,58 +52,68 @@
         <body>
 
           <!-- barre de recherche -->
-            <div class=" my-11 container mx-auto justify-center ">
+            <div class=" lg:flex max-w-7xl my-11 container mx-auto justify-center ">
                 <div class="flex flex-col lg:flex-row shadow-md p-3 mx-5 rounded-2xl">
 
                 <!-- Destination -->
 
                     <div class=" flex w-full lg:w-3/10 mb-3 lg:mb-0 shadow-lg mr-2.5 p-3 rounded-2xl space-x-2">
-            
+
+                        <div class="flex items-center mr-3">
+                            <i class="text-[#1F355E]  fa-solid fa-location-arrow"></i>
+                        </div>
                       
-                        <div class="">
-                            <h2 class="text-[#1F355E] sm:text-[12px] lg:text-[20px]" >Destination</h2>  <!--Titre -->
-                            <i class="text-[#1F355E]  fa-solid fa-location-arrow"></i>                  <!--Logo -->
-                            <input type="text" placeholder="Ou allez-vous ?" >                            <!--Recherche -->
+                        <div class="w-full">
+                            <h2 class="text-[#1F355E] sm:text-[12px] lg:text-[18px]" >Destination</h2> 
+                                             
+                            <input type="text" placeholder="Ou allez-vous ?" class="w-full focus:outline-none">            
                         </div>
                     </div>
+                    
 
 
+                    <!-- Dates -->
 
-                <!-- Dates -->
+                    <div class=" flex w-full lg:w-3/10 mb-3 lg:mb-0 shadow-lg mr-2.5 p-3 rounded-2xl space-x-2">
 
-                    <div class=" flex w-full mb-3 lg:mb-0 lg:w-3/10 shadow-lg mr-2.5 p-3 rounded-2xl space-x-2">
-
-                        
-                        <div class="">
-                            <h2 class="text-[#1F355E] sm:text-[12px] lg:text-[20px]" >Dates</h2>      
+                        <div class="flex items-center mr-3">
                             <i class="text-[#1F355E] fa-solid fa-calendar"></i>
-                            <input type="text" placeholder="Quand ?" class="">
+                        </div>
+                      
+                        <div class="w-full">
+                            <h2 class="text-[#1F355E] sm:text-[12px] lg:text-[18px]" >Dates</h2> 
+                                             
+                            <input type="date" placeholder="Ou allez-vous ?" class="w-full focus:outline-none">            
                         </div>
                     </div>
 
 
 
+                    <!-- Voyageurs -->
 
+                    <div class=" flex w-full lg:w-3/10 mb-3 lg:mb-0 shadow-lg mr-2.5 p-3 rounded-2xl space-x-2">
 
-                <!-- Voyageurs -->
-
-                    <div class=" flex w-full mb-3 lg:mb-0 lg:w-3/10 shadow-lg mr-2.5 p-3 rounded-2xl space-x-2">
-                        
-                        <div class="">
-                            <h2 class="text-[#1F355E] sm:text-[12px] lg:text-[20px]" >Voyageurs</h2>
+                        <div class="flex items-center mr-3">
                             <i class="text-[#1F355E] fa-solid fa-user-group"></i>
-                            <input type="text" placeholder="Combien de voyageurs ?">
-                        </div>    
+                        </div>
+                      
+                        <div class="w-full">
+                            <h2 class="text-[#1F355E] sm:text-[12px] lg:text-[18px]" >Voyageurs</h2> 
+                                             
+                            <input type="number" placeholder="1" class="w-full focus:outline-none">            
+                        </div>
                     </div>
+
+
 
 
                 <!-- Button recherche -->
 
                     <div  class="flex items-center">
 
-                        <div class=" flex w-full lg:w-1/10 mr-2.5  rounded-2xl ">
+                        <div class=" flex w-full mt-3 lg:w-1/10 mr-2.5  rounded-2xl ">
 
-                            <button class=" text-white p-4 bg-[#FFC107]  rounded-2xl">RECHERCHER</button>
+                            <button class=" text-white p-3 bg-[#FFC107]  rounded-2xl ">RECHERCHER</button>
 
                         </div>
                     </div>
@@ -113,51 +123,21 @@
                 </div>
             </div>
 
-            <!-- Slider 1 -->
+        <div class="flex max-w-7xl mx-auto my-11  justify-content-center">
 
-            <div class="container mx-auto mb-8"><h2>Logement boostés</h2></div>
-            <div class="flex w-full container mx-auto justify-center mb-8 ">
-                <div class="w-1/4 space-x-8">
-                    <img src="https://placehold.co/600x400" alt="" width="272px">
-                    <h2>Titre de l'annonce</h2>
-                    <p>130€ pour 4 nuits</p>
-                    <p>note 4/5</p>
-
-                </div>
-                <div class="w-1/4">
-                    <img src="https://placehold.co/600x400" alt="" width="272px">
-                    <h2>Titre de l'annonce</h2>
-                    <p>130€ pour 4 nuits</p>
-                    <p>note 4/5</p>
-
-                </div>
-                <div class="w-1/4">
-                    <img src="https://placehold.co/600x400" alt="" width="272px">
-                    <h2>Titre de l'annonce</h2>
-                    <p>130€ pour 4 nuits</p>
-                    <p>note 4/5</p>
-
-                </div>
-                <div class="w-1/4">
-                    <img src="https://placehold.co/600x400" alt="" width="272px">
-                    <h2>Titre de l'annonce</h2>
-                    <p>130€ pour 4 nuits</p>
-                    <p>note 4/5</p>
-
-                </div>
+            <div class="flex w-1/2 justify-content-center">
+                <img src="asset/image/icone-langue-fr.png" alt="">
             </div>
 
-            <!-- Qui sommes nous ? -->
-             <div class="w-full flex container mx-auto ">
-                <div class="w-1/2">
-                    <img src="https://placehold.co/600x400" alt="">
-                </div>
-                <div class="1/2">
-                    <h2>Qui sommes nous ?</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, voluptis ex eos?</p>
-                </div>
+            <div class="w-1/2">
+                <h1 class="text-[31px]">Qui sommes-nous ?</h1>
+                <p>Lorem ipsum dolor sit, amet c</p>
+            </div>
 
-             </div>
+        </div>
+
+
+
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js" integrity="sha512-6BTOlkauINO65nLhXhthZMtepgJSghyimIalb+crKRPhvhmsCdnIuGcVbR5/aQY2A+260iC1OPy1oCdB6pSSwQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
